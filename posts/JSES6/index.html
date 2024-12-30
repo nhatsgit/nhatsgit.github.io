@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><title>
+    
+    Khám Phá Các Tính Năng Mới Trong JavaScript ES6 | 
+    
+    NguyenAnhNhatBlog
+</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://nhatsgit.github.io/posts/jses6/" />
+<link rel="icon" type="image/png" href="https://nhatsgit.github.io/image/favicon.ico">
+
+
+<meta name="description" content="
+    JavaScript ES6 (ECMAScript 2015) đã mang lại một loạt tính năng mới giúp việc lập trình trở nên dễ dàng hơn, mạnh mẽ hơn và linh hoạt hơn. Trong bài viết này, chúng ta sẽ khám phá các tính năng nổi bật của ES6 và cách chúng cải thiện việc phát triển ứng dụng web.
+1. Let và Const - Quản lý biến dễ dàng hơn
+Trước ES6, JavaScript chỉ có từ khóa var để khai báo biến, nhưng nó có một số vấn đề, đặc biệt là khi làm việc với phạm vi (scope) của biến. ES6 đã giới thiệu let và const giúp việc quản lý biến trở nên rõ ràng hơn.
+    " />
+<meta property="og:description" content="
+    JavaScript ES6 (ECMAScript 2015) đã mang lại một loạt tính năng mới giúp việc lập trình trở nên dễ dàng hơn, mạnh mẽ hơn và linh hoạt hơn. Trong bài viết này, chúng ta sẽ khám phá các tính năng nổi bật của ES6 và cách chúng cải thiện việc phát triển ứng dụng web.
+1. Let và Const - Quản lý biến dễ dàng hơn
+Trước ES6, JavaScript chỉ có từ khóa var để khai báo biến, nhưng nó có một số vấn đề, đặc biệt là khi làm việc với phạm vi (scope) của biến. ES6 đã giới thiệu let và const giúp việc quản lý biến trở nên rõ ràng hơn.
+    " />
+
+
+
+
+
+
+<meta property="og:image" content="https://nhatsgit.github.io/posts/jses6/thumbnail2.jpg" />
+
+
+
+
+<meta property="og:title" content="Khám Phá Các Tính Năng Mới trong JavaScript ES6" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nhatsgit.github.io/posts/jses6/" /><meta property="article:section" content="posts" />
+
+<meta property="article:published_time" content="2024-12-30T00:00:00+00:00" />
+
+<meta property="article:modified_time" content="2024-12-30T00:00:00+00:00" />
+
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nhatsgit.github.io/posts/jses6/thumbnail2.jpg">
+  <meta name="twitter:title" content="Khám Phá Các Tính Năng Mới trong JavaScript ES6">
+  <meta name="twitter:description" content="JavaScript ES6 (ECMAScript 2015) đã mang lại một loạt tính năng mới giúp việc lập trình trở nên dễ dàng hơn, mạnh mẽ hơn và linh hoạt hơn. Trong bài viết này, chúng ta sẽ khám phá các tính năng nổi bật của ES6 và cách chúng cải thiện việc phát triển ứng dụng web.
+1. Let và Const - Quản lý biến dễ dàng hơn Trước ES6, JavaScript chỉ có từ khóa var để khai báo biến, nhưng nó có một số vấn đề, đặc biệt là khi làm việc với phạm vi (scope) của biến. ES6 đã giới thiệu let và const giúp việc quản lý biến trở nên rõ ràng hơn.">
+
+
+  <meta itemprop="name" content="Khám Phá Các Tính Năng Mới trong JavaScript ES6">
+  <meta itemprop="description" content="JavaScript ES6 (ECMAScript 2015) đã mang lại một loạt tính năng mới giúp việc lập trình trở nên dễ dàng hơn, mạnh mẽ hơn và linh hoạt hơn. Trong bài viết này, chúng ta sẽ khám phá các tính năng nổi bật của ES6 và cách chúng cải thiện việc phát triển ứng dụng web.
+1. Let và Const - Quản lý biến dễ dàng hơn Trước ES6, JavaScript chỉ có từ khóa var để khai báo biến, nhưng nó có một số vấn đề, đặc biệt là khi làm việc với phạm vi (scope) của biến. ES6 đã giới thiệu let và const giúp việc quản lý biến trở nên rõ ràng hơn.">
+  <meta itemprop="datePublished" content="2024-12-30T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-30T00:00:00+00:00">
+  <meta itemprop="wordCount" content="858">
+  <meta itemprop="image" content="https://nhatsgit.github.io/posts/jses6/thumbnail2.jpg">
+  <meta itemprop="keywords" content="JavaScript,ES6,Programming">
+
+
+
+<link rel="stylesheet" href="/main.min.css">
+
+
+
+
+
+<script src="/bundle.js"></script>
+
+
+
+
+
+
+
+<script data-ad-client="adsense-key" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+
+
+
+
+
+</head>
+
+<body><header id="header">
+  <div class="top-bar">
+    <div class="container-md">
+
+      <div class="row align-items-center">
+        <div class="col-3 col-sm-4 social-buttons d-none d-sm-block">
+          <ul>
+    
+    <li>
+        <a href="https://www.facebook.com/nhat.ank.nguyen.2024" target="_blank">
+            <i class="fab fa-facebook"></i></a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+    <li>
+        <a href="https://github.com/nhatsgit" target="_blank">
+            <i class="fab fa-github"></i></a>
+    </li>
+    
+
+    
+
+    
+
+</ul>
+        </div>
+
+        <div class="ra-toggler col-3 col-sm-4 d-block d-sm-none">
+          <button class="bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="col-6 col-sm-4">
+          <h2 class="title"><a href="/">NguyenAnhNhatBlog</a></h2>
+        </div>
+
+        
+        <div class="col-3 col-sm-4">
+          <div class="col col-md-8 offset-md-4 d-none d-sm-block">
+            <form id="cse-search-box-form-id" class="input-group search-bar" onsubmit="return executeQuery('lg');"
+              role="search">
+              <input id="cse-search-input-box-id" type="text" class="form-control" placeholder="Search">
+              <button class="btn" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-md">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item d-block d-sm-none">
+            <ul class="social-buttons">
+              <ul>
+    
+    <li>
+        <a href="https://www.facebook.com/nhat.ank.nguyen.2024" target="_blank">
+            <i class="fab fa-facebook"></i></a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+    <li>
+        <a href="https://github.com/nhatsgit" target="_blank">
+            <i class="fab fa-github"></i></a>
+    </li>
+    
+
+    
+
+    
+
+</ul>
+            </ul>
+          </li>
+
+          
+          
+          <li class="nav-item">
+            <a class="nav-link 
+              
+              " 
+              href="/">
+              Trang chủ
+            </a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Blog
+            </a>
+            <div class="dropdown-menu">
+              
+              
+                <a class="dropdown-item" href="/posts/">Posts</a>
+              
+              
+              
+                <div class="dropdown-divider"></div>
+              
+              
+              
+                <a class="dropdown-item" href="/tags/">Tags</a>
+              
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link 
+              
+              " 
+              href="/about/">
+              Giới thiệu
+            </a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <form id="cse-search-box-form-id2" class="d-flex search-bar d-block d-sm-none"
+          onsubmit="return executeQuery('xs');" role="search">
+          <input id="cse-search-input-box-id2" type="text" class="form-control" placeholder="Search">
+          <button class="btn" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+        
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="blog-content">
+    <div class="container-md">
+        <div class="row">
+            
+            <div class="col-lg-2 d-none d-xl-block">
+                <div class="ad-left-offset"></div>
+                
+            </div>
+
+            <div class="col-md-12 col-lg-8 px-lg-4">
+                
+
+                <h1 class="title">Khám Phá Các Tính Năng Mới trong JavaScript ES6</h1>
+
+                <div class="container-fluid px-0 mb-4">
+                    <div class="row align-items-end">
+                        <div class="col-md-4 date-time">
+                            <span class="date">
+    Dec 30, 2024
+</span>
+                            &centerdot;
+                            <span class="time-to-read">
+    5 mins read</span>
+                        </div>
+
+                        <div class="col-md-8 tags ">
+                            
+                            <a href="/tags/javascript"><span
+                                    class="tag bg-dark">JavaScript</span></a>
+                            
+                            <a href="/tags/es6"><span
+                                    class="tag bg-dark">ES6</span></a>
+                            
+                            <a href="/tags/programming"><span
+                                    class="tag bg-dark">Programming</span></a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                    
+                        <figure>
+                            
+                            <img id="cover-image" src=/posts/jses6/thumbnail2.jpg alt="Khám Phá Các Tính Năng Mới trong JavaScript ES6">
+                        </figure>
+                    
+                
+
+                <p>JavaScript ES6 (ECMAScript 2015) đã mang lại một loạt tính năng mới giúp việc lập trình trở nên dễ dàng hơn, mạnh mẽ hơn và linh hoạt hơn. Trong bài viết này, chúng ta sẽ khám phá các tính năng nổi bật của ES6 và cách chúng cải thiện việc phát triển ứng dụng web.</p>
+<h3 id="1-let-và-const---quản-lý-biến-dễ-dàng-hơn">1. Let và Const - Quản lý biến dễ dàng hơn</h3>
+<p>Trước ES6, JavaScript chỉ có từ khóa <code>var</code> để khai báo biến, nhưng nó có một số vấn đề, đặc biệt là khi làm việc với phạm vi (scope) của biến. ES6 đã giới thiệu <code>let</code> và <code>const</code> giúp việc quản lý biến trở nên rõ ràng hơn.</p>
+<ul>
+<li>
+<p><strong>let:</strong> Dùng để khai báo biến có thể thay đổi giá trị. Phạm vi của biến được giới hạn trong block mà nó được khai báo, giúp tránh các vấn đề về phạm vi toàn cục.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;  <span style="color:#75715e">// Giá trị có thể thay đổi
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>const:</strong> Dùng để khai báo biến không thể thay đổi giá trị sau khi được khởi tạo. Thích hợp để khai báo các hằng số hoặc các giá trị không thay đổi.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PI</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// PI = 3.14159; // Sẽ gây lỗi vì không thể thay đổi giá trị của const
+</span></span></span></code></pre></div></li>
+</ul>
+<h3 id="2-arrow-functions---viết-hàm-ngắn-gọn-và-dễ-hiểu-hơn">2. Arrow Functions - Viết hàm ngắn gọn và dễ hiểu hơn</h3>
+<p>Arrow functions là một cách viết hàm ngắn gọn, giúp mã nguồn dễ đọc và dễ bảo trì hơn. Nó cũng giải quyết được vấn đề của từ khóa <code>this</code> trong các hàm truyền thống.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Hàm truyền thống
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Arrow function
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sum</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) =&gt; <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;
+</span></span></code></pre></div><p>Kết quả trả về trong arrow function sẽ tự động là giá trị của biểu thức mà không cần phải dùng từ khóa <code>return</code>.</p>
+<h3 id="3-template-literals---xử-lý-chuỗi-dễ-dàng-hơn">3. Template Literals - Xử lý chuỗi dễ dàng hơn</h3>
+<p>Template literals là cách viết chuỗi mới trong ES6, giúp việc ghép chuỗi trở nên dễ dàng hơn và hỗ trợ chèn biến vào chuỗi.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">greeting</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Hello, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">! Welcome to the world of ES6.`</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">greeting</span>);  <span style="color:#75715e">// Kết quả: Hello, JavaScript! Welcome to the world of ES6.
+</span></span></span></code></pre></div><h3 id="4-destructuring---giải-nén-dữ-liệu-dễ-dàng">4. Destructuring - Giải nén dữ liệu dễ dàng</h3>
+<p>Destructuring giúp bạn dễ dàng lấy các giá trị từ mảng hoặc đối tượng mà không cần phải truy cập từng phần tử một cách thủ công.</p>
+<p>Destructuring với mảng:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">c</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">c</span>);  <span style="color:#75715e">// Kết quả: 1 2 3
+</span></span></span></code></pre></div><p>Destructuring với đối tượng:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">person</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">person</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>);  <span style="color:#75715e">// Kết quả: John 30
+</span></span></span></code></pre></div><h3 id="5-spread-operator---sao-chép-và-kết-hợp-mảng-đối-tượng-dễ-dàng">5. Spread Operator - Sao chép và kết hợp mảng, đối tượng dễ dàng</h3>
+<p>Spread operator (<code>...</code>) là một tính năng cực kỳ hữu ích trong ES6, cho phép bạn sao chép hoặc kết hợp mảng, đối tượng mà không cần phải sử dụng các phương thức phức tạp.</p>
+<p>Kết hợp mảng:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr1</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr2</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr3</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">arr1</span>, ...<span style="color:#a6e22e">arr2</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr3</span>);  <span style="color:#75715e">// Kết quả: [1, 2, 3, 4]
+</span></span></span></code></pre></div><p>Kết hợp đối tượng:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj1</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj2</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">city</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;New York&#34;</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj3</span> <span style="color:#f92672">=</span> { ...<span style="color:#a6e22e">obj1</span>, ...<span style="color:#a6e22e">obj2</span> };
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj3</span>);  <span style="color:#75715e">// Kết quả: { name: &#34;John&#34;, age: 30, city: &#34;New York&#34; }
+</span></span></span></code></pre></div><h3 id="6-promises-và-asyncawait---quản-lý-bất-đồng-bộ-dễ-dàng-hơn">6. Promises và Async/Await - Quản lý bất đồng bộ dễ dàng hơn</h3>
+<p>Quản lý các tác vụ bất đồng bộ trong JavaScript trước ES6 khá phức tạp với callback hell. Với sự ra đời của Promises, ES6 đã giúp đơn giản hóa việc quản lý bất đồng bộ.</p>
+<p>Promises:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fetchData</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">success</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">success</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;Dữ liệu đã được tải thành công.&#34;</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;Có lỗi xảy ra.&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetchData</span>.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">message</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>}).<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">error</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>Async/Await: Giúp viết mã bất đồng bộ dễ hiểu và đồng bộ hơn.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fetchData</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">someAsyncFunction</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetchData</span>();
+</span></span></code></pre></div><h3 id="7-classes---lập-trình-hướng-đối-tượng-đơn-giản-hơn">7. Classes - Lập trình hướng đối tượng đơn giản hơn</h3>
+<p>ES6 đã giới thiệu khái niệm class để viết các lớp trong JavaScript, giúp việc lập trình hướng đối tượng trở nên dễ dàng hơn và dễ đọc hơn.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">age</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">greet</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Hello, my name is </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> and I am </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> years old.`</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">person1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person</span>(<span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#ae81ff">30</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">person1</span>.<span style="color:#a6e22e">greet</span>();  <span style="color:#75715e">// Kết quả: Hello, my name is John and I am 30 years old.
+</span></span></span></code></pre></div><h3 id="kết-luận">Kết luận</h3>
+<p>JavaScript ES6 đã mang lại nhiều tính năng mạnh mẽ và tiện ích cho các lập trình viên. Việc sử dụng các tính năng như <code>let</code>, <code>const</code>, arrow functions, template literals, destructuring, và spread operator giúp viết mã sạch sẽ, dễ hiểu và hiệu quả hơn. Hãy tiếp tục khám phá và áp dụng những tính năng mới này vào dự án của bạn để cải thiện quy trình phát triển ứng dụng web!</p>
+
+
+                <div id="social-media-share">
+	<p><i>Sharing is caring!</i></p>
+	
+	<div class="share-buttons">
+	    <a  href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnhatsgit.github.io%2fposts%2fjses6%2f"
+	        onclick="socialMediaPopUp(this.href, '', 500, 500); return false;"
+	        title="Share on Facebook. Opens in a new window.">
+	        <img src=/icons/48px/facebook.png>
+	    </a>
+
+	    <a  href="https://twitter.com/intent/tweet?text=Kh%c3%a1m%20Ph%c3%a1%20C%c3%a1c%20T%c3%adnh%20N%c4%83ng%20M%e1%bb%9bi%20trong%20JavaScript%20ES6&url=https%3a%2f%2fnhatsgit.github.io%2fposts%2fjses6%2f"
+	        onclick="socialMediaPopUp(this.href, '', 500, 500); return false;"
+	        title="Share on Twitter. Opens in a new window." >
+	        <img src=/icons/48px/x.png>
+	    </a>
+
+		<a  href="http://www.reddit.com/submit?url=https%3a%2f%2fnhatsgit.github.io%2fposts%2fjses6%2f"
+	        onclick="socialMediaPopUp(this.href, '', 900, 500); return false;"
+	        title="Share on Reddit. Opens in a new window." >
+	        <img src=/icons/48px/reddit.png>
+	    </a>
+
+	    <a  href="http://pinterest.com/pin/create/button/https://nhatsgit.github.io/posts/jses6/"
+	        onclick="socialMediaPopUp(this.href, '', 900, 500); return false;"
+	        title="Share on Pinterest. Opens in a new window." >
+	        <img src=/icons/48px/pinterest.png>
+	    </a>
+
+	    <a  href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3a%2f%2fnhatsgit.github.io%2fposts%2fjses6%2f"
+	        onclick="socialMediaPopUp(this.href, '', 900, 500); return false;"
+	        title="Share on Tumblr. Opens in a new window." >
+	        <img src=/icons/48px/tumblr.png>
+	    </a>
+
+		<a  href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fnhatsgit.github.io%2fposts%2fjses6%2f
+			&title=Kh%c3%a1m%20Ph%c3%a1%20C%c3%a1c%20T%c3%adnh%20N%c4%83ng%20M%e1%bb%9bi%20trong%20JavaScript%20ES6&summary=%3cp%3eJavaScript%20ES6%20%28ECMAScript%202015%29%20%c4%91%c3%a3%20mang%20l%e1%ba%a1i%20m%e1%bb%99t%20lo%e1%ba%a1t%20t%c3%adnh%20n%c4%83ng%20m%e1%bb%9bi%20gi%c3%bap%20vi%e1%bb%87c%20l%e1%ba%adp%20tr%c3%acnh%20tr%e1%bb%9f%20n%c3%aan%20d%e1%bb%85%20d%c3%a0ng%20h%c6%a1n%2c%20m%e1%ba%a1nh%20m%e1%ba%bd%20h%c6%a1n%20v%c3%a0%20linh%20ho%e1%ba%a1t%20h%c6%a1n.%20Trong%20b%c3%a0i%20vi%e1%ba%bft%20n%c3%a0y%2c%20ch%c3%bang%20ta%20s%e1%ba%bd%20kh%c3%a1m%20ph%c3%a1%20c%c3%a1c%20t%c3%adnh%20n%c4%83ng%20n%e1%bb%95i%20b%e1%ba%adt%20c%e1%bb%a7a%20ES6%20v%c3%a0%20c%c3%a1ch%20ch%c3%bang%20c%e1%ba%a3i%20thi%e1%bb%87n%20vi%e1%bb%87c%20ph%c3%a1t%20tri%e1%bb%83n%20%e1%bb%a9ng%20d%e1%bb%a5ng%20web.%3c%2fp%3e%0a%3ch3%20id%3d%221-let-v%c3%a0-const---qu%e1%ba%a3n-l%c3%bd-bi%e1%ba%bfn-d%e1%bb%85-d%c3%a0ng-h%c6%a1n%22%3e1.%20Let%20v%c3%a0%20Const%20-%20Qu%e1%ba%a3n%20l%c3%bd%20bi%e1%ba%bfn%20d%e1%bb%85%20d%c3%a0ng%20h%c6%a1n%3c%2fh3%3e%0a%3cp%3eTr%c6%b0%e1%bb%9bc%20ES6%2c%20JavaScript%20ch%e1%bb%89%20c%c3%b3%20t%e1%bb%ab%20kh%c3%b3a%20%3ccode%3evar%3c%2fcode%3e%20%c4%91%e1%bb%83%20khai%20b%c3%a1o%20bi%e1%ba%bfn%2c%20nh%c6%b0ng%20n%c3%b3%20c%c3%b3%20m%e1%bb%99t%20s%e1%bb%91%20v%e1%ba%a5n%20%c4%91%e1%bb%81%2c%20%c4%91%e1%ba%b7c%20bi%e1%bb%87t%20l%c3%a0%20khi%20l%c3%a0m%20vi%e1%bb%87c%20v%e1%bb%9bi%20ph%e1%ba%a1m%20vi%20%28scope%29%20c%e1%bb%a7a%20bi%e1%ba%bfn.%20ES6%20%c4%91%c3%a3%20gi%e1%bb%9bi%20thi%e1%bb%87u%20%3ccode%3elet%3c%2fcode%3e%20v%c3%a0%20%3ccode%3econst%3c%2fcode%3e%20gi%c3%bap%20vi%e1%bb%87c%20qu%e1%ba%a3n%20l%c3%bd%20bi%e1%ba%bfn%20tr%e1%bb%9f%20n%c3%aan%20r%c3%b5%20r%c3%a0ng%20h%c6%a1n.%3c%2fp%3e&source=https%3a%2f%2fnhatsgit.github.io%2f"
+	        onclick="socialMediaPopUp(this.href, '', 900, 500); return false;"
+	        title="Share on LinkedIn. Opens in a new window." >
+	        <img src=/icons/48px/linkedin.png>
+	    </a>
+
+	    <a  href="mailto:?subject=Kh%c3%a1m%20Ph%c3%a1%20C%c3%a1c%20T%c3%adnh%20N%c4%83ng%20M%e1%bb%9bi%20trong%20JavaScript%20ES6&amp;body=Check out this site https%3a%2f%2fnhatsgit.github.io%2fposts%2fjses6%2f"
+	        title="Share via Email. Opens in a new window." >
+	        <img src=/icons/48px/email.png>
+	    </a>
+	</div>
+</div>
+
+
+
+
+                
+                <br>
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = '';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+
+            <div class="col-lg-2 d-none d-xl-block">
+                <div class="ad-right-offset"></div>
+                
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-center py-5">
+    <p>
+        
+        © 2024 <a href="https://rafed.github.io/" target="_blank">Rafed Muhammad Yasir</a>.
+        <a href="https://github.com/rafed/BlogRa/" target="_blank">BlogRa</a> theme for
+        <a href="https://github.com/gohugoio/hugo/" target="_blank">
+            Hugo
+        </a>. 
+        
+    </p>
+</footer>
+
+
+<script async src="https://cse.google.com/cse.js?cx=google-cse-key"></script>
+<gcse:searchresults-only></gcse:searchresults-only>
+</body>
+
+</html>

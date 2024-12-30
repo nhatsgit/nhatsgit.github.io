@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on NguyenAnhNhatBlog</title>
+    <link>https://nhatsgit.github.io/tags/networking/</link>
+    <description>Recent content in Networking on NguyenAnhNhatBlog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nhatsgit.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript và Vai Trò Quan Trọng Trong Mạng Máy Tính</title>
+      <link>https://nhatsgit.github.io/posts/jsinnetwork/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://nhatsgit.github.io/posts/jsinnetwork/</guid>
+      <description>&lt;p&gt;JavaScript không chỉ là một ngôn ngữ lập trình phổ biến trong phát triển giao diện người dùng, mà còn đóng vai trò quan trọng trong các ứng dụng mạng máy tính. Từ việc xây dựng các ứng dụng thời gian thực đến tối ưu hóa giao tiếp giữa client và server, JavaScript mang lại nhiều giải pháp hiệu quả cho hệ thống mạng hiện đại.&lt;/p&gt;&#xA;&lt;h3 id=&#34;javascript-trong-mạng-máy-tính&#34;&gt;JavaScript Trong Mạng Máy Tính&lt;/h3&gt;&#xA;&lt;p&gt;JavaScript giúp kết nối người dùng với các máy chủ và dịch vụ thông qua mạng Internet. Đây là những lĩnh vực quan trọng mà JavaScript thể hiện sức mạnh trong mạng máy tính:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

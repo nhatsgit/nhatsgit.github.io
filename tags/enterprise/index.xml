@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Enterprise on NguyenAnhNhatBlog</title>
+    <link>https://nhatsgit.github.io/tags/enterprise/</link>
+    <description>Recent content in Enterprise on NguyenAnhNhatBlog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nhatsgit.github.io/tags/enterprise/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Các Framework phổ biến trong Java: Lựa chọn phù hợp cho dự án của bạn</title>
+      <link>https://nhatsgit.github.io/posts/javaframework/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://nhatsgit.github.io/posts/javaframework/</guid>
+      <description>&lt;p&gt;Java là một trong những ngôn ngữ lập trình phổ biến và mạnh mẽ nhất trên thế giới, được sử dụng rộng rãi trong các ứng dụng doanh nghiệp, hệ thống phân tán, và các nền tảng web. Một trong những lý do Java giữ được sức hút lâu dài là nhờ vào sự phát triển của các framework mạnh mẽ giúp lập trình viên dễ dàng xây dựng và duy trì các ứng dụng chất lượng cao. Trong bài viết này, chúng ta sẽ tìm hiểu một số framework phổ biến trong Java mà bạn nên biết.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java trong Networking: Khám Phá Lực Mạnh Mẽ của Java trong Việc Xây Dựng Các Ứng Dụng Mạng</title>
+      <link>https://nhatsgit.github.io/posts/javanetworking/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://nhatsgit.github.io/posts/javanetworking/</guid>
+      <description>&lt;p&gt;Trong thế giới hiện đại, các ứng dụng mạng đóng vai trò cực kỳ quan trọng, từ việc gửi email, duyệt web đến các giao dịch trực tuyến. Java, với khả năng phát triển ứng dụng mạnh mẽ và khả năng tương thích đa nền tảng, đã trở thành một công cụ mạnh mẽ trong lĩnh vực lập trình mạng. Bài viết này sẽ tìm hiểu cách Java hỗ trợ việc phát triển các ứng dụng mạng và những thư viện, framework nổi bật giúp lập trình viên xây dựng các ứng dụng mạng hiệu quả.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java: Ngôn ngữ lập trình vắng mạnh cho ứng dụng doanh nghiệp</title>
+      <link>https://nhatsgit.github.io/posts/javainb/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://nhatsgit.github.io/posts/javainb/</guid>
+      <description>&lt;h3 id=&#34;java-ngôn-ngữ-lập-trình-vắng-mạnh-cho-ứng-dụng-doanh-nghiệp&#34;&gt;Java: Ngôn ngữ lập trình vắng mạnh cho ứng dụng doanh nghiệp&lt;/h3&gt;&#xA;&lt;p&gt;Java là một trong những ngôn ngữ lập trình phổ biến và lâu đời nhất trong thế giới công nghệ. Được phát triển bởi Sun Microsystems (hiện là một phần của Oracle), Java đã chứng minh được sự ốn định, mạnh mẽ và linh hoạt trong hàng thập kỷ qua.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h4 id=&#34;lịch-sử-của-java&#34;&gt;Lịch sử của Java&lt;/h4&gt;&#xA;&lt;p&gt;Java được giới thiệu lần đầu vào năm 1995 với mục tiêu cung cấp một nền tảng lập trình độc lập với hệ điều hành. Khẩu hiệu nổi tiếng của Java, &lt;em&gt;&amp;ldquo;Write Once, Run Anywhere&amp;rdquo;&lt;/em&gt; (WORA), đã thu hút rất nhiều nhà phát triển vì khả năng chạy trên mọi nền tảng có Java Virtual Machine (JVM).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

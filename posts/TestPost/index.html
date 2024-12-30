@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>
+    
+    Tổng Quan Về JavaScript: Ngôn Ngữ Lập Trình Mạnh Mẽ Cho Web | 
+    
+    NhatBlog
+</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="http://localhost:1313/posts/testpost/" />
+<link rel="icon" type="image/png" href="http://localhost:1313/image/favicon.ico">
+
+
+<meta name="description" content="
+    JavaScript là một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới, đặc biệt trong phát triển web. Đây là ngôn ngữ chính giúp tạo ra các ứng dụng web động và tương tác, từ việc kiểm tra dữ liệu đầu vào cho đến việc phát triển các trò chơi trực tuyến phức tạp.
+1. JavaScript là gì?
+JavaScript là một ngôn ngữ lập trình kịch bản (scripting language) được sử dụng chủ yếu trong trình duyệt web. Nó cho phép các nhà phát triển tạo ra các yếu tố động trên trang web, như thay đổi nội dung mà không cần tải lại trang (AJAX), tạo hiệu ứng động, và xử lý sự kiện từ người dùng như nhấp chuột, nhập văn bản, di chuột.
+    " />
+<meta property="og:description" content="
+    JavaScript là một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới, đặc biệt trong phát triển web. Đây là ngôn ngữ chính giúp tạo ra các ứng dụng web động và tương tác, từ việc kiểm tra dữ liệu đầu vào cho đến việc phát triển các trò chơi trực tuyến phức tạp.
+1. JavaScript là gì?
+JavaScript là một ngôn ngữ lập trình kịch bản (scripting language) được sử dụng chủ yếu trong trình duyệt web. Nó cho phép các nhà phát triển tạo ra các yếu tố động trên trang web, như thay đổi nội dung mà không cần tải lại trang (AJAX), tạo hiệu ứng động, và xử lý sự kiện từ người dùng như nhấp chuột, nhập văn bản, di chuột.
+    " />
+
+
+
+
+
+
+<meta property="og:image" content="http://localhost:1313/posts/testpost/thumnail.jpg" />
+
+
+
+
+<meta property="og:title" content="Tổng Quan về JavaScript: Ngôn ngữ lập trình mạnh mẽ cho web" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/testpost/" /><meta property="article:section" content="posts" />
+
+<meta property="article:published_time" content="2020-12-22T00:00:00+00:00" />
+
+<meta property="article:modified_time" content="2020-12-22T00:00:00+00:00" />
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tổng Quan về JavaScript: Ngôn ngữ lập trình mạnh mẽ cho web">
+  <meta name="twitter:description" content="JavaScript là một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới, đặc biệt trong phát triển web. Đây là ngôn ngữ chính giúp tạo ra các ứng dụng web động và tương tác, từ việc kiểm tra dữ liệu đầu vào cho đến việc phát triển các trò chơi trực tuyến phức tạp.
+1. JavaScript là gì? JavaScript là một ngôn ngữ lập trình kịch bản (scripting language) được sử dụng chủ yếu trong trình duyệt web. Nó cho phép các nhà phát triển tạo ra các yếu tố động trên trang web, như thay đổi nội dung mà không cần tải lại trang (AJAX), tạo hiệu ứng động, và xử lý sự kiện từ người dùng như nhấp chuột, nhập văn bản, di chuột.">
+
+
+  <meta itemprop="name" content="Tổng Quan về JavaScript: Ngôn ngữ lập trình mạnh mẽ cho web">
+  <meta itemprop="description" content="JavaScript là một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới, đặc biệt trong phát triển web. Đây là ngôn ngữ chính giúp tạo ra các ứng dụng web động và tương tác, từ việc kiểm tra dữ liệu đầu vào cho đến việc phát triển các trò chơi trực tuyến phức tạp.
+1. JavaScript là gì? JavaScript là một ngôn ngữ lập trình kịch bản (scripting language) được sử dụng chủ yếu trong trình duyệt web. Nó cho phép các nhà phát triển tạo ra các yếu tố động trên trang web, như thay đổi nội dung mà không cần tải lại trang (AJAX), tạo hiệu ứng động, và xử lý sự kiện từ người dùng như nhấp chuột, nhập văn bản, di chuột.">
+  <meta itemprop="datePublished" content="2020-12-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2020-12-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="705">
+  <meta itemprop="keywords" content="Javascript,Web Development,Programming">
+
+
+
+<link rel="stylesheet" href="/main.min.css">
+
+
+
+
+
+<script src="/bundle.js"></script>
+
+
+
+
+
+
+
+<script data-ad-client="adsense-key" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body><header id="header">
+  <div class="top-bar">
+    <div class="container-md">
+
+      <div class="row align-items-center">
+        <div class="col-3 col-sm-4 social-buttons d-none d-sm-block">
+          <ul>
+    
+    <li>
+        <a href="https://www.facebook.com/DevHacker-2351204168278028" target="_blank">
+            <i class="fab fa-facebook"></i></a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+    <li>
+        <a href="https://github.com/rafed" target="_blank">
+            <i class="fab fa-github"></i></a>
+    </li>
+    
+
+    
+
+    
+
+</ul>
+        </div>
+
+        <div class="ra-toggler col-3 col-sm-4 d-block d-sm-none">
+          <button class="bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="col-6 col-sm-4">
+          <h2 class="title"><a href="/">NhatBlog</a></h2>
+        </div>
+
+        
+        <div class="col-3 col-sm-4">
+          <div class="col col-md-8 offset-md-4 d-none d-sm-block">
+            <form id="cse-search-box-form-id" class="input-group search-bar" onsubmit="return executeQuery('lg');"
+              role="search">
+              <input id="cse-search-input-box-id" type="text" class="form-control" placeholder="Search">
+              <button class="btn" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-md">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item d-block d-sm-none">
+            <ul class="social-buttons">
+              <ul>
+    
+    <li>
+        <a href="https://www.facebook.com/DevHacker-2351204168278028" target="_blank">
+            <i class="fab fa-facebook"></i></a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+    <li>
+        <a href="https://github.com/rafed" target="_blank">
+            <i class="fab fa-github"></i></a>
+    </li>
+    
+
+    
+
+    
+
+</ul>
+            </ul>
+          </li>
+
+          
+          
+          <li class="nav-item">
+            <a class="nav-link 
+              
+              " 
+              href="/">
+              Trang chủ
+            </a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Blog
+            </a>
+            <div class="dropdown-menu">
+              
+              
+                <a class="dropdown-item" href="/posts/">Posts</a>
+              
+              
+              
+                <div class="dropdown-divider"></div>
+              
+              
+              
+                <a class="dropdown-item" href="/tags/">Tags</a>
+              
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link 
+              
+              " 
+              href="/about/">
+              Giới thiệu
+            </a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <form id="cse-search-box-form-id2" class="d-flex search-bar d-block d-sm-none"
+          onsubmit="return executeQuery('xs');" role="search">
+          <input id="cse-search-input-box-id2" type="text" class="form-control" placeholder="Search">
+          <button class="btn" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+        
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="blog-content">
+    <div class="container-md">
+        <div class="row">
+            
+            <div class="col-lg-2 d-none d-xl-block">
+                <div class="ad-left-offset"></div>
+                
+            </div>
+
+            <div class="col-md-12 col-lg-8 px-lg-4">
+                
+
+                <h1 class="title">Tổng Quan về JavaScript: Ngôn ngữ lập trình mạnh mẽ cho web</h1>
+
+                <div class="container-fluid px-0 mb-4">
+                    <div class="row align-items-end">
+                        <div class="col-md-4 date-time">
+                            <span class="date">
+    Dec 22, 2020
+</span>
+                            &centerdot;
+                            <span class="time-to-read">
+    4 mins read</span>
+                        </div>
+
+                        <div class="col-md-8 tags ">
+                            
+                            <a href="/tags/javascript"><span
+                                    class="tag bg-dark">JavaScript</span></a>
+                            
+                            <a href="/tags/web-development"><span
+                                    class="tag bg-dark">Web Development</span></a>
+                            
+                            <a href="/tags/programming"><span
+                                    class="tag bg-dark">Programming</span></a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                    
+                        <figure>
+                            
+                            <img id="cover-image" src=/posts/testpost/thumnail.jpg alt="Tổng Quan về JavaScript: Ngôn ngữ lập trình mạnh mẽ cho web">
+                        </figure>
+                    
+                
+
+                <p>JavaScript là một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới, đặc biệt trong phát triển web. Đây là ngôn ngữ chính giúp tạo ra các ứng dụng web động và tương tác, từ việc kiểm tra dữ liệu đầu vào cho đến việc phát triển các trò chơi trực tuyến phức tạp.</p>
+<h3 id="1-javascript-là-gì">1. JavaScript là gì?</h3>
+<p>JavaScript là một ngôn ngữ lập trình kịch bản (scripting language) được sử dụng chủ yếu trong trình duyệt web. Nó cho phép các nhà phát triển tạo ra các yếu tố động trên trang web, như thay đổi nội dung mà không cần tải lại trang (AJAX), tạo hiệu ứng động, và xử lý sự kiện từ người dùng như nhấp chuột, nhập văn bản, di chuột.</p>
+<p>JavaScript hoạt động dựa trên <strong>sự kiện (event-driven)</strong> và <strong>kỹ thuật bất đồng bộ (asynchronous)</strong>, giúp cho việc xử lý các tác vụ trên web trở nên hiệu quả và mượt mà.</p>
+<h3 id="2-lịch-sử-phát-triển-của-javascript">2. Lịch sử phát triển của JavaScript</h3>
+<p>JavaScript được tạo ra vào năm 1995 bởi Brendan Eich trong khi làm việc tại Netscape Communications. Ban đầu, JavaScript chỉ được dùng để thêm một số tính năng tương tác đơn giản vào trình duyệt Netscape Navigator. Tuy nhiên, nhờ vào sự phổ biến của trình duyệt web và cộng đồng phát triển rộng lớn, JavaScript nhanh chóng trở thành một ngôn ngữ mạnh mẽ và được sử dụng trên toàn thế giới.</p>
+<p>Ngày nay, JavaScript không chỉ chạy trên trình duyệt mà còn được sử dụng trong các ứng dụng máy chủ (server-side) thông qua Node.js.</p>
+<h3 id="3-cấu-trúc-cơ-bản-của-javascript">3. Cấu trúc cơ bản của JavaScript</h3>
+<p>Một số khái niệm cơ bản trong JavaScript mà bạn cần nắm:</p>
+<ul>
+<li>
+<p><strong>Biến (Variables):</strong> Được khai báo bằng từ khóa <code>let</code>, <code>const</code>, hoặc <code>var</code>. Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Hàm (Functions):</strong> JavaScript cho phép bạn định nghĩa các hàm để tái sử dụng mã. Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">sum</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>));  <span style="color:#75715e">// Kết quả: 15
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>Mảng (Arrays):</strong> JavaScript hỗ trợ mảng để lưu trữ danh sách các giá trị. Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Apple&#34;</span>, <span style="color:#e6db74">&#34;Banana&#34;</span>, <span style="color:#e6db74">&#34;Orange&#34;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#ae81ff">0</span>]);  <span style="color:#75715e">// Kết quả: Apple
+</span></span></span></code></pre></div></li>
+</ul>
+<h3 id="4-javascript-trong-phát-triển-web">4. JavaScript trong phát triển web</h3>
+<p>JavaScript là thành phần không thể thiếu trong phát triển web hiện đại. Nó có thể được sử dụng ở cả phía client (trình duyệt) và phía server (Node.js).</p>
+<ul>
+<li>
+<p><strong>Client-side:</strong> JavaScript chạy trong trình duyệt để tương tác với người dùng và thao tác DOM (Document Object Model) - cấu trúc tài liệu HTML. Ví dụ: thay đổi nội dung, thêm hiệu ứng chuyển động, xử lý sự kiện người dùng.</p>
+</li>
+<li>
+<p><strong>Server-side:</strong> Với Node.js, JavaScript cũng có thể chạy trên máy chủ, giúp xử lý yêu cầu HTTP, tương tác với cơ sở dữ liệu và gửi phản hồi về phía client.</p>
+</li>
+</ul>
+<h3 id="5-công-cụ-hỗ-trợ-phát-triển-javascript">5. Công cụ hỗ trợ phát triển JavaScript</h3>
+<p>Có nhiều công cụ hỗ trợ việc phát triển JavaScript, bao gồm các framework và thư viện:</p>
+<ul>
+<li>
+<p><strong>React.js:</strong> Một thư viện JavaScript nổi tiếng cho việc xây dựng giao diện người dùng (UI) động và phản ứng.</p>
+</li>
+<li>
+<p><strong>Vue.js:</strong> Một framework JavaScript khác giúp phát triển các ứng dụng web tương tác dễ dàng.</p>
+</li>
+<li>
+<p><strong>Node.js:</strong> Một môi trường chạy JavaScript trên máy chủ, giúp bạn xây dựng các ứng dụng web mạnh mẽ.</p>
+</li>
+</ul>
+<h3 id="6-tương-lai-của-javascript">6. Tương lai của JavaScript</h3>
+<p>JavaScript không ngừng phát triển và cải tiến với các phiên bản mới từ ECMA (Tiêu chuẩn của JavaScript). Các tính năng như async/await, arrow functions, destructuring, modules đã giúp JavaScript trở thành ngôn ngữ mạnh mẽ và linh hoạt hơn.</p>
+<p>Với sự phát triển mạnh mẽ của các công cụ, framework và thư viện, JavaScript sẽ tiếp tục đóng vai trò quan trọng trong tương lai của phát triển web.</p>
+<h3 id="6-kết-luận">6. Kết luận</h3>
+<p>JavaScript là một ngôn ngữ lập trình không thể thiếu trong phát triển web hiện đại. Với khả năng chạy cả trên client và server, JavaScript đã chứng minh được sức mạnh và sự linh hoạt của mình trong việc xây dựng các ứng dụng web tương tác và mạnh mẽ. Nếu bạn là một lập trình viên web, học JavaScript chắc chắn là một bước đi quan trọng và cần thiết.</p>
+
+
+                <div id="social-media-share">
+	<p><i>Sharing is caring!</i></p>
+	
+	<div class="share-buttons">
+	    <a  href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2ftestpost%2f"
+	        onclick="socialMediaPopUp(this.href, '', 500, 500); return false;"
+	        title="Share on Facebook. Opens in a new window.">
+	        <img src=/icons/48px/facebook.png>
+	    </a>
+
+	    <a  href="https://twitter.com/intent/tweet?text=T%e1%bb%95ng%20Quan%20v%e1%bb%81%20JavaScript%3a%20Ng%c3%b4n%20ng%e1%bb%af%20l%e1%ba%adp%20tr%c3%acnh%20m%e1%ba%a1nh%20m%e1%ba%bd%20cho%20web&url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftestpost%2f"
+	        onclick="socialMediaPopUp(this.href, '', 500, 500); return false;"
+	        title="Share on Twitter. Opens in a new window." >
+	        <img src=/icons/48px/x.png>
+	    </a>
+
+		<a  href="http://www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftestpost%2f"
+	        onclick="socialMediaPopUp(this.href, '', 900, 500); return false;"
+	        title="Share on Reddit. Opens in a new window." >
+	        <img src=/icons/48px/reddit.png>
+	    </a>
+
+	    <a  href="http://pinterest.com/pin/create/button/http://localhost:1313/posts/testpost/"
+	        onclick="socialMediaPopUp(this.href, '', 900, 500); return false;"
+	        title="Share on Pinterest. Opens in a new window." >
+	        <img src=/icons/48px/pinterest.png>
+	    </a>
+
+	    <a  href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http%3a%2f%2flocalhost%3a1313%2fposts%2ftestpost%2f"
+	        onclick="socialMediaPopUp(this.href, '', 900, 500); return false;"
+	        title="Share on Tumblr. Opens in a new window." >
+	        <img src=/icons/48px/tumblr.png>
+	    </a>
+
+		<a  href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftestpost%2f
+			&title=T%e1%bb%95ng%20Quan%20v%e1%bb%81%20JavaScript%3a%20Ng%c3%b4n%20ng%e1%bb%af%20l%e1%ba%adp%20tr%c3%acnh%20m%e1%ba%a1nh%20m%e1%ba%bd%20cho%20web&summary=%3cp%3eJavaScript%20l%c3%a0%20m%e1%bb%99t%20trong%20nh%e1%bb%afng%20ng%c3%b4n%20ng%e1%bb%af%20l%e1%ba%adp%20tr%c3%acnh%20ph%e1%bb%95%20bi%e1%ba%bfn%20nh%e1%ba%a5t%20tr%c3%aan%20th%e1%ba%bf%20gi%e1%bb%9bi%2c%20%c4%91%e1%ba%b7c%20bi%e1%bb%87t%20trong%20ph%c3%a1t%20tri%e1%bb%83n%20web.%20%c4%90%c3%a2y%20l%c3%a0%20ng%c3%b4n%20ng%e1%bb%af%20ch%c3%adnh%20gi%c3%bap%20t%e1%ba%a1o%20ra%20c%c3%a1c%20%e1%bb%a9ng%20d%e1%bb%a5ng%20web%20%c4%91%e1%bb%99ng%20v%c3%a0%20t%c6%b0%c6%a1ng%20t%c3%a1c%2c%20t%e1%bb%ab%20vi%e1%bb%87c%20ki%e1%bb%83m%20tra%20d%e1%bb%af%20li%e1%bb%87u%20%c4%91%e1%ba%a7u%20v%c3%a0o%20cho%20%c4%91%e1%ba%bfn%20vi%e1%bb%87c%20ph%c3%a1t%20tri%e1%bb%83n%20c%c3%a1c%20tr%c3%b2%20ch%c6%a1i%20tr%e1%bb%b1c%20tuy%e1%ba%bfn%20ph%e1%bb%a9c%20t%e1%ba%a1p.%3c%2fp%3e%0a%3ch3%20id%3d%221-javascript-l%c3%a0-g%c3%ac%22%3e1.%20JavaScript%20l%c3%a0%20g%c3%ac%3f%3c%2fh3%3e%0a%3cp%3eJavaScript%20l%c3%a0%20m%e1%bb%99t%20ng%c3%b4n%20ng%e1%bb%af%20l%e1%ba%adp%20tr%c3%acnh%20k%e1%bb%8bch%20b%e1%ba%a3n%20%28scripting%20language%29%20%c4%91%c6%b0%e1%bb%a3c%20s%e1%bb%ad%20d%e1%bb%a5ng%20ch%e1%bb%a7%20y%e1%ba%bfu%20trong%20tr%c3%acnh%20duy%e1%bb%87t%20web.%20N%c3%b3%20cho%20ph%c3%a9p%20c%c3%a1c%20nh%c3%a0%20ph%c3%a1t%20tri%e1%bb%83n%20t%e1%ba%a1o%20ra%20c%c3%a1c%20y%e1%ba%bfu%20t%e1%bb%91%20%c4%91%e1%bb%99ng%20tr%c3%aan%20trang%20web%2c%20nh%c6%b0%20thay%20%c4%91%e1%bb%95i%20n%e1%bb%99i%20dung%20m%c3%a0%20kh%c3%b4ng%20c%e1%ba%a7n%20t%e1%ba%a3i%20l%e1%ba%a1i%20trang%20%28AJAX%29%2c%20t%e1%ba%a1o%20hi%e1%bb%87u%20%e1%bb%a9ng%20%c4%91%e1%bb%99ng%2c%20v%c3%a0%20x%e1%bb%ad%20l%c3%bd%20s%e1%bb%b1%20ki%e1%bb%87n%20t%e1%bb%ab%20ng%c6%b0%e1%bb%9di%20d%c3%b9ng%20nh%c6%b0%20nh%e1%ba%a5p%20chu%e1%bb%99t%2c%20nh%e1%ba%adp%20v%c4%83n%20b%e1%ba%a3n%2c%20di%20chu%e1%bb%99t.%3c%2fp%3e&source=http%3a%2f%2flocalhost%3a1313%2f"
+	        onclick="socialMediaPopUp(this.href, '', 900, 500); return false;"
+	        title="Share on LinkedIn. Opens in a new window." >
+	        <img src=/icons/48px/linkedin.png>
+	    </a>
+
+	    <a  href="mailto:?subject=T%e1%bb%95ng%20Quan%20v%e1%bb%81%20JavaScript%3a%20Ng%c3%b4n%20ng%e1%bb%af%20l%e1%ba%adp%20tr%c3%acnh%20m%e1%ba%a1nh%20m%e1%ba%bd%20cho%20web&amp;body=Check out this site http%3a%2f%2flocalhost%3a1313%2fposts%2ftestpost%2f"
+	        title="Share via Email. Opens in a new window." >
+	        <img src=/icons/48px/email.png>
+	    </a>
+	</div>
+</div>
+
+
+
+
+                
+                <br>
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = '';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+
+            <div class="col-lg-2 d-none d-xl-block">
+                <div class="ad-right-offset"></div>
+                
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-center py-5">
+    <p>
+        
+        © 2024 <a href="https://rafed.github.io/" target="_blank">Rafed Muhammad Yasir</a>.
+        <a href="https://github.com/rafed/BlogRa/" target="_blank">BlogRa</a> theme for
+        <a href="https://github.com/gohugoio/hugo/" target="_blank">
+            Hugo
+        </a>. 
+        
+    </p>
+</footer>
+
+
+<script async src="https://cse.google.com/cse.js?cx=google-cse-key"></script>
+<gcse:searchresults-only></gcse:searchresults-only>
+</body>
+
+</html>

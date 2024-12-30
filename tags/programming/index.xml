@@ -31,9 +31,9 @@
     </item>
     <item>
       <title>Khám Phá Các Tính Năng Mới trong JavaScript ES6</title>
-      <link>https://nhatsgit.github.io/posts/jses6/</link>
+      <link>https://nhatsgit.github.io/posts/jses6x/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://nhatsgit.github.io/posts/jses6/</guid>
+      <guid>https://nhatsgit.github.io/posts/jses6x/</guid>
       <description>&lt;p&gt;JavaScript ES6 (ECMAScript 2015) đã mang lại một loạt tính năng mới giúp việc lập trình trở nên dễ dàng hơn, mạnh mẽ hơn và linh hoạt hơn. Trong bài viết này, chúng ta sẽ khám phá các tính năng nổi bật của ES6 và cách chúng cải thiện việc phát triển ứng dụng web.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-let-và-const---quản-lý-biến-dễ-dàng-hơn&#34;&gt;1. Let và Const - Quản lý biến dễ dàng hơn&lt;/h3&gt;&#xA;&lt;p&gt;Trước ES6, JavaScript chỉ có từ khóa &lt;code&gt;var&lt;/code&gt; để khai báo biến, nhưng nó có một số vấn đề, đặc biệt là khi làm việc với phạm vi (scope) của biến. ES6 đã giới thiệu &lt;code&gt;let&lt;/code&gt; và &lt;code&gt;const&lt;/code&gt; giúp việc quản lý biến trở nên rõ ràng hơn.&lt;/p&gt;</description>
     </item>
     <item>

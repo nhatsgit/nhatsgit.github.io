@@ -58,13 +58,6 @@
       <description>&lt;h2 id=&#34;java-là-gì&#34;&gt;Java Là Gì?&lt;/h2&gt;&#xA;&lt;p&gt;Java là một ngôn ngữ lập trình phổ biến, mạnh mẽ và độc lập nền tảng. Với Java, bạn có thể phát triển nhiều loại ứng dụng khác nhau, từ ứng dụng di động, web, đến hệ thống nhúng.&lt;/p&gt;&#xA;&lt;p&gt;Dưới đây là các khái niệm cơ bản nhất khi học Java dành cho người mới bắt đầu:&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-cài-đặt-java&#34;&gt;1. Cài Đặt Java&lt;/h3&gt;&#xA;&lt;p&gt;Để bắt đầu, bạn cần:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Cài đặt JDK (Java Development Kit) từ trang web chính thức của Oracle hoặc OpenJDK.&lt;/li&gt;&#xA;&lt;li&gt;Sử dụng IDE như IntelliJ IDEA, Eclipse, hoặc NetBeans, hoặc viết code trong một trình soạn thảo đơn giản như VSCode.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-cấu-trúc-chương-trình-java&#34;&gt;2. Cấu Trúc Chương Trình Java&lt;/h3&gt;&#xA;&lt;p&gt;Mỗi chương trình Java bắt buộc phải có ít nhất một lớp và phương thức &lt;code&gt;main()&lt;/code&gt;. Đây là điểm bắt đầu của mọi ứng dụng Java.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Tại sao JavaScript là lựa chọn tuyệt vời cho lập trình viên</title>
-      <link>https://nhatsgit.github.io/posts/jsjob/</link>
-      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://nhatsgit.github.io/posts/jsjob/</guid>
-      <description>&lt;p&gt;JavaScript không chỉ là ngôn ngữ lập trình phổ biến trong phát triển web mà còn là một công cụ mạnh mẽ giúp bạn xây dựng sự nghiệp lập trình viên thành công. Trong bài viết này, chúng ta sẽ khám phá lý do tại sao JavaScript lại là lựa chọn tuyệt vời cho các lập trình viên, đặc biệt là những ai mới bắt đầu sự nghiệp trong ngành phát triển phần mềm.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Tương Lai Nghề Nghiệp của Lập Trình Viên Java: Tiềm Năng và Thách Thức</title>
       <link>https://nhatsgit.github.io/posts/javajob/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>

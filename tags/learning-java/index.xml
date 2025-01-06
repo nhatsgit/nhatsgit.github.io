@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Learning Java on NguyenAnhNhatBlog</title>
+    <title>Learning Java on NhatBlog</title>
     <link>https://nhatsgit.github.io/tags/learning-java/</link>
-    <description>Recent content in Learning Java on NguyenAnhNhatBlog</description>
+    <description>Recent content in Learning Java on NhatBlog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
